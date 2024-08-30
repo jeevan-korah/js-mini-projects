@@ -1,0 +1,238 @@
+body{
+    padding:0 5% ;
+    font-family: 'Inter', 'Poppins', sans-serif;
+    overflow-x:hidden; 
+ 
+    width: 100%;
+
+}
+p{
+    font-family: 'Inter', 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.main{
+    max-width: 800px;
+    margin: 0 auto;
+    width: 86.59%;
+   
+}
+.add-task {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Inter', 'Poppins', sans-serif;
+    padding: 8px;
+    padding-right: 13px;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #5E5EF7;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    /* Flexbox properties */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Space between SVG and text */
+
+    transition: transform 0.15s;
+
+}
+
+.add-task svg {
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+.add-task:hover{
+    opacity: 80%;
+    cursor: pointer;
+    transform: scale(1.01);
+}
+.add-task:active{
+    transform: scale(0.95);
+}
+
+
+.inputval{
+    margin-bottom: 10px;
+    border: 2px solid #000000;
+    outline-color: black;
+    border-radius: 5px;
+    padding: 8px 6px;
+    width: 100%;
+    max-width: 400px;
+    font-weight: 500;
+    font-family: 'Inter', 'Poppins', sans-serif;
+}
+
+.no-entry-error {
+    border: 2px solid #e24040; 
+}
+
+
+.no-entry-error:focus {
+    border: 2px solid #d62020;
+    outline-color: #d62020;
+}
+.new-value{
+    margin-bottom: 20px;
+    border: none;
+    padding: 0px;
+    width:100% ;
+    font-weight: 500;
+    font-family: 'Inter', 'Poppins', sans-serif;
+    font-size: 1.5rem;
+
+    
+}
+.new-value:focus{
+    border: none;
+    outline: none;
+
+}
+.task{
+    background-color: white;
+    border:1px solid ;
+    border-color: #EEEEEE;
+    border-width: 3px;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 1em;
+    transition: transform 0.15s;
+    width: 94%;
+    max-width: 700px ;
+    
+}
+.task:hover{
+    transform: scale(1.01);
+}
+.task-desc{
+     flex-grow: 1; 
+    
+
+}
+.task-desc p {
+    font-weight: 500;
+    font-family: 'Inter', 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+.task-tools{
+   flex-grow: 0.5; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+
+
+
+    margin-left: 30px;
+    
+    
+    
+}
+.task-tools button{
+    border: none;
+    border-radius: 10px;
+    font-family: 'Inter', 'Poppins', sans-serif;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #5E5EF7;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.15s;
+  
+};
+.task-tools button:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+}
+.task-tools button:active{
+    opacity: 70%;
+    transform: scale(0.95);
+}
+.delete-task{
+    background-color: red;
+    margin-bottom: 8px;
+    transition: all 0.1s;
+}
+.delete-task:hover{
+    background-color: rgb(255, 1, 1);
+}
+.update-task{
+    background-color: rgb(3, 223, 87);
+    transition: all 0.1s;
+}
+.update-task:hover{
+    background-color: rgb(4, 196, 77);
+
+    
+}
+
+
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        padding: 0;
+        margin: 0; 
+        width: 100%;
+    }
+
+    .main {
+        width: 85.5%; 
+        margin: 0;
+        padding: 0 2rem 0 2rem;
+        overflow-x: hidden;
+    }
+
+    p {
+        font-size: 1.5rem; 
+    }
+
+    .add-task {
+        font-size: 0.875rem; 
+        padding: 8px;
+        padding-right: 13px;
+    }
+
+    .inputval {
+        width: 83%;
+        margin: 10 px auto;
+
+        min-width: 170px;
+        
+    }
+
+    .task {
+        width: 83%;
+        min-width: 180px;
+        
+    }
+
+    .task-desc p {
+        font-size: 1rem;
+         
+    }
+
+    .new-value {
+        font-size: 1.25rem; 
+    }
+
+    .task-tools button {
+        font-size: 0.875rem; 
+        width: 4rem; 
+    }
+}
