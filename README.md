@@ -3,5 +3,5 @@
 
 ![image](https://github.com/user-attachments/assets/ef663f9a-f727-49c8-9c2c-c32063e4cba9)
 
-**1. Weather App**: 
+**2. Weather App**: 
 - Outcome: Learn about API integration, asynchronous programming with promises or async/await, and data presentation.
